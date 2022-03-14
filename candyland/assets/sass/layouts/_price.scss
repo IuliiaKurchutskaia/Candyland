@@ -1,0 +1,159 @@
+.price-container{
+width: 100%;
+margin:auto;
+
+}
+.prices-items{
+    padding-top: 27px;
+    display: flex;
+    justify-content: center;
+   width: 100%;
+    flex-wrap: wrap;
+    color:#FFFFFF;
+    margin: auto;
+    padding-bottom: 100px;
+    gap: 25px;
+}
+
+.price-item {
+    text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 31%;
+border: 2px solid #BDAE82;
+padding-bottom: 42px;
+}
+
+.price-name{
+    padding-top: 12px;
+    font-family: "Merriweather";
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 56px;
+   margin-bottom: 0px;
+}
+
+.price-cost{
+  
+    font-family: "Merriweather";
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 48px;
+letter-spacing: 3px;
+/* identical to box height, or 200% */
+
+text-align: center;
+
+color: #BDAE82;
+}
+
+.price-desc{
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+}
+
+.button-price{
+    text-align: center;
+ //   margin-left: 110px;
+    font-size: 20px;
+padding-top: 2px;
+width: 90%;
+max-width: 220px;
+
+margin: auto;
+   
+  
+
+}
+
+.price-desc:nth-child(7){
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+.price-container{
+    
+    width: 100%;
+    margin:auto;
+   
+    }
+
+.price-item {
+width: 50%;
+margin: auto;
+
+}
+.prices-items{
+    padding-top: 27px;
+    display: flex;
+ //width: 100%;
+  // padding-left: 200px;
+ margin: auto;
+    color:#FFFFFF;
+ 
+    padding-bottom: 100px;
+    gap: 25px;
+    flex-direction: column;
+
+}
+.button-price{
+
+  
+  justify-self: center;
+}
+}
+
+
+
+@media (max-width: 458px) {
+    .price{
+width: 100%;
+margin:auto;
+    }
+    .price-container{
+        width: 100%;
+        margin:auto;
+       
+        }
+    
+    .price-item {
+    width: 50%;
+   
+    }
+    .prices-items{
+        padding-top: 27px;
+        display: flex;
+    // width: 100%;
+     
+  //   margin-left: -25%;
+        color:#FFFFFF;
+     
+        padding-bottom: 100px;
+        gap: 25px;
+        flex-direction: column;
+    
+    }
+    .button-price{
+  
+      
+        font-size: 16px;
+        line-height: 18px;
+      justify-self: center;
+    }
+
+    .price-desc{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .price-name{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

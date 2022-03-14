@@ -1,0 +1,85 @@
+:root {
+  --color-gold: #bdae82;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font1: 60px;
+  --font2: 40px;
+  --font3: 20px;
+  --font4: 18px;
+  --font5: 28px;
+  --font6: 24px;
+  --font-tablet-title: 32px;
+
+}
+
+
+
+body{
+    font-family: 'Inter', sans-serif;
+font-family: 'Merriweather Sans', sans-serif;
+background-color: var(--color-white);
+;
+}
+* {
+box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+
+
+
+a{
+  color:white;
+}
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  //  padding: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    .container{ width:  100%;
+    margin: 0 auto;}
+    .main{ width:  100%;
+      margin: 0 auto;}
+      body{
+
+      overflow-x:hidden;
+      }
+  }
+
+
+  
+.light-theme {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  fill:000;
+}
+
+.light-theme:hover {
+  color: var(--color-black);
+}
+
+.light {
+  
+  background-image: linear-gradient(
+    to top,
+    #fff 39px,
+    #000 39px,
+    #000 41px,
+    #fff 41px
+  );
+}
+
+.active {
+  color: var(--color-black);
+  background-color: var(--color-gold);
+}
+
+.button-port:hover {
+  color: var(--color-white);
+  background-color: var(--color-gold);
+}
