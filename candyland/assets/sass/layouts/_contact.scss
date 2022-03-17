@@ -1,5 +1,6 @@
 .contact-container{
-    width: auto;
+  width: 100%;
+    max-width: 1440px;
   margin: auto;
     display: flex;
     justify-content: center;
@@ -35,6 +36,7 @@
 
 
 .map{
+
     padding-top:100px;
     padding-right: 100px;
 }
@@ -49,11 +51,12 @@
       display: flex;
       justify-content: center;
       align-content: center;
-          
+          flex-direction: column;
       background: url('../img/contact.jpg');
       background-size: cover;
       background-position: left center;
      width: 100%;
+     padding:10px;
   // width: auto;
  
     }
@@ -65,5 +68,12 @@
         margin-left: 100px;
         justify-content: center;
     }
+    .map{
+display: none;
+  }
+  .contact-text{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }

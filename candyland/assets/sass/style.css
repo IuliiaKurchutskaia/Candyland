@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&subset=cyrillic");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
@@ -611,7 +610,7 @@ a {
   }
 
   .hero-text {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 10px;
     width: 100%;
@@ -619,7 +618,7 @@ a {
   }
 
   .hero-title {
-    padding-top: 130px;
+    padding-top: 70px;
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
@@ -634,7 +633,7 @@ a {
   }
 
   .hero-text {
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 5px;
     width: 100%;
     height: auto;
@@ -650,140 +649,10 @@ a {
     line-height: 45px;
   }
 }
-.title-container {
-  width: 50%;
-  margin: auto;
-  overflow-x: hidden;
-}
-
-.skills-container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.title {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 80px;
-  color: #BDAE82;
-  vertical-align: middle;
-  text-align: center;
-  overflow: hidden;
-  /* Скрываем линии, чтобы они не выходили за ширину блока заголовка */
-  text-align: center;
-}
-
-.title::before, .title::after {
-  display: inline-block;
-  content: "";
-  height: 2px;
-  width: 100%;
-  transform: translateY(-1rem);
-  box-sizing: border-box;
-  border-width: 0 30px;
-  /* Отступ от текста */
-  background-color: #BDAE82;
-}
-
-.skills-items {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
-  color: #FFFFFF;
-  margin: auto;
-  padding-bottom: 53px;
-}
-
-.title:before {
-  margin-left: -100%;
-}
-
-.title:after {
-  margin-right: -100%;
-}
-
-.skill-item {
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  width: 20%;
-  background-position: center top;
-}
-
-.skill-name {
-  text-align: center;
-  padding-top: 28px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
-  margin-bottom: 2px;
-}
-
-.skill-desc {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 36px;
-}
-
-@media (max-width: 768px) {
-  .skills-container {
-    width: 100%;
-  }
-
-  .title-container {
-    width: 60%;
-    margin: auto;
-  }
-
-  .skills-items {
-    width: calc(100% - 40px);
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .skill-item {
-    width: 45%;
-    position: relative;
-  }
-}
-@media (max-width: 458px) {
-  .skills-container {
-    width: 100%;
-  }
-
-  .title-container {
-    width: 60%;
-    margin: auto;
-  }
-
-  .skills-items {
-    width: calc(100% - 40px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-  }
-
-  .skill-item {
-    width: 45%;
-    position: relative;
-    margin: auto;
-  }
-}
 .portfolio-container {
   width: 100%;
   margin: auto;
+  color: #BDAE82;
 }
 
 .button-choice {
@@ -798,6 +667,15 @@ a {
 
 .button-choice:hover {
   color: black !important;
+}
+
+.title-container {
+  width: 100%;
+  margin: auto;
+}
+
+.port-title {
+  margin: auto;
 }
 
 .portfolio-img {
@@ -877,374 +755,9 @@ a {
     padding-bottom: 20px;
   }
 }
-.video {
-  padding-left: 20px;
-  padding-bottom: 66px;
-  padding-right: 20px;
-}
-
-.video-player {
-  margin-top: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 705px;
-}
-
-.player {
-  width: 100%;
-  border: 5px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-  font-size: 0;
-  overflow: hidden;
-}
-
-.video-button {
-  display: block;
-  width: 127px;
-  height: 127px;
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  z-index: 2;
-  fill: #FFFFFF;
-}
-
-/* This css is only applied when fullscreen is active. */
-.player:fullscreen {
-  max-width: none;
-  width: 100%;
-}
-
-.player:-webkit-full-screen {
-  max-width: none;
-  width: 100%;
-}
-
-.player__controls {
-  width: 100%;
-}
-
-.player__video {
-  width: 100%;
-  border: solid 2px #BDAE82;
-}
-
-.player__button {
-  width: 40px;
-  height: 36px;
-  background-repeat: no-repeat;
-  border: 0;
-  line-height: 1;
-  color: white;
-  background-color: black;
-  text-align: center;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  max-width: 50px;
-}
-
-.mute {
-  text-align: center;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  background-color: black;
-}
-
-.player__button__mute_true {
-  background-image: url("/assets/svg/mute.svg");
-}
-
-.player__button__mute_false {
-  background-image: url("/assets/svg/volume.svg");
-}
-
-.pause {
-  background-image: url("/assets/svg/pause.svg");
-}
-
-.play {
-  background-image: url("/assets/svg/play.svg");
-}
-
-.player__button:focus {
-  border-color: #ffc600;
-}
-
-.player__slider {
-  width: 10px;
-}
-
-.player__controls {
-  display: flex;
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  bottom: 0;
-  background-color: black;
-  border-bottom: solid 2px #bdae82;
-  border-left: solid 2px #bdae82;
-  border-right: solid 2px #bdae82;
-  transform: translateY(100%) translateY(-5px);
-  transition: all 0.3s;
-  height: 40px;
-}
-
-.player:hover .player__controls {
-  transform: translateY(0);
-}
-
-.player:hover .progress {
-  height: 8.4px;
-}
-
-.player__controls > * {
-  flex: 1;
-}
-
-.progress {
-  position: relative;
-  display: flex;
-  flex-basis: 50%;
-  height: 3px;
-  transition: height 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: ew-resize;
-  padding-top: 12px;
-}
-
-.progress__filled {
-  width: 50%;
-  background: #BDAE82;
-  flex-basis: 50%;
-}
-
-/* unholy css to style input type="range" */
-input[type=range] {
-  -webkit-appearance: none;
-  background: transparent;
-  margin: 0 5px;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-  background: #bdae82;
-  border-radius: 1.3px;
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-
-input[type=range]::-webkit-slider-thumb {
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background: #BDAE82;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -3.5px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #bada55;
-}
-
-input[type=range]::-moz-range-track {
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-  background: #ffffff;
-  border-radius: 1.3px;
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background: #BDAE82;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .video-conteiner {
-    margin: auto;
-  }
-
-  .video-player {
-    position: relative;
-    width: 100%;
-    height: 418px;
-  }
-
-  .video {
-    padding-bottom: 6px;
-  }
-
-  .video-button {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: center;
-    left: center;
-  }
-
-  .player__controls {
-    width: 100%;
-  }
-
-  .progress {
-    display: none;
-  }
-}
-.price-container {
-  width: 100%;
-  margin: auto;
-}
-
-.prices-items {
-  padding-top: 27px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  color: #FFFFFF;
-  margin: auto;
-  padding-bottom: 100px;
-  gap: 25px;
-}
-
-.price-item {
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  width: 31%;
-  border: 2px solid #BDAE82;
-  padding-bottom: 42px;
-}
-
-.price-name {
-  padding-top: 12px;
-  font-family: "Merriweather";
-  font-style: Bold;
-  font-size: 32px;
-  line-height: 56px;
-  margin-bottom: 0px;
-}
-
-.price-cost {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 48px;
-  letter-spacing: 3px;
-  /* identical to box height, or 200% */
-  text-align: center;
-  color: #BDAE82;
-}
-
-.price-desc {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 36px;
-}
-
-.button-price {
-  text-align: center;
-  font-size: 20px;
-  padding-top: 2px;
-  width: 90%;
-  max-width: 220px;
-  margin: auto;
-}
-
-.price-desc:nth-child(7) {
-  padding-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-  .price-container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .price-item {
-    width: 50%;
-    margin: auto;
-  }
-
-  .prices-items {
-    padding-top: 27px;
-    display: flex;
-    margin: auto;
-    color: #FFFFFF;
-    padding-bottom: 100px;
-    gap: 25px;
-    flex-direction: column;
-  }
-
-  .button-price {
-    justify-self: center;
-  }
-}
-@media (max-width: 458px) {
-  .price {
-    width: 100%;
-    margin: auto;
-  }
-
-  .price-container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .price-item {
-    width: 50%;
-  }
-
-  .prices-items {
-    padding-top: 27px;
-    display: flex;
-    color: #FFFFFF;
-    padding-bottom: 100px;
-    gap: 25px;
-    flex-direction: column;
-  }
-
-  .button-price {
-    font-size: 16px;
-    line-height: 18px;
-    justify-self: center;
-  }
-
-  .price-desc {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .price-name {
-    font-size: 25px;
-    line-height: 30px;
-  }
-}
 .contact-container {
-  width: auto;
+  width: 100%;
+  max-width: 1440px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -1278,10 +791,12 @@ input[type=range]::-moz-range-thumb {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
     background: url("../img/contact.jpg");
     background-size: cover;
     background-position: left center;
     width: 100%;
+    padding: 10px;
   }
 
   .contact-title {
@@ -1292,15 +807,26 @@ input[type=range]::-moz-range-thumb {
     margin-left: 100px;
     justify-content: center;
   }
+
+  .map {
+    display: none;
+  }
+
+  .contact-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .company {
-  width: 1024px;
+  max-width: 1024px;
   margin: auto;
   color: #BDAE82;
 }
 
 .company-container {
   width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .sub_company {
