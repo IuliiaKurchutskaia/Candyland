@@ -303,7 +303,7 @@ a {
 
 .nav {
   margin-left: auto;
-  width: 500px;
+  width: 600px;
 }
 
 .nav-list {
@@ -580,12 +580,12 @@ a {
 }
 
 .hero-title {
-  margin-bottom: -15px;
   font-family: "Merriweather";
   font-style: bold;
   font-weight: 700;
-  font-size: 65px;
-  line-height: 135px;
+  font-size: 34.82px;
+  line-height: 72.55px;
+  padding-left: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -618,10 +618,9 @@ a {
   }
 
   .hero-title {
-    padding-top: 70px;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 @media (max-width: 320px) {
@@ -645,14 +644,14 @@ a {
 
   .hero-title {
     font-weight: 700;
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 .portfolio-container {
   width: 100%;
   margin: auto;
-  color: #BDAE82;
+  color: #786518;
 }
 
 .button-choice {
@@ -690,8 +689,8 @@ a {
   position: relative;
   padding-top: 30px;
   padding-right: 30px;
-  width: 450px;
-  height: 560px;
+  width: 400px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -765,7 +764,7 @@ a {
 
 .contact-text {
   padding-right: 20px;
-  color: #BDAE82;
+  color: #786518;
   font-family: "Inter";
 }
 
@@ -775,7 +774,7 @@ a {
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
-  color: #BDAE82;
+  color: #786518;
   text-align: left;
   letter-spacing: 3px;
 }
@@ -820,7 +819,7 @@ a {
 .company {
   max-width: 1024px;
   margin: auto;
-  color: #BDAE82;
+  color: #786518;
 }
 
 .company-container {
